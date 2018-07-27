@@ -1,0 +1,64 @@
+--ProblemSet 00, July <27> <2018>
+-- Submission by <sudharsankumaresan@accenture.com> 
+
+1.How does agile testing (development) methodology differ from other testing (development) methodologies?
+  In Agile model we get frequent feedbacks from the client for all the tasks which are to be done and here the working software denotes the progress of the project.
+
+2. What are the most important components of Agile?
+  (i) Epic
+  (ii) Features
+  (iii) User Stories
+  (iv) Tasks
+
+3.What is difference between Epic,features, User stories & Tasks?
+   Epic:It is the end product which is deleivered to the end user.
+   Features:It gives the properties of the end product which to be deleivered.
+   User Stories:It gives the various requirements which are demanded by end user.
+   Tasks:These are granular jobs which needs to be done inorder to get the end product ready.
+
+4.Explain what is a product backlog in Scrum
+  Product Backlog in Scrum denotes a task which is not started yet and also which is not completed on time.
+
+5.What is Scrum Sprint?
+  Scrum Sprint is a period of two weeks where the scrum manager and the team members meet to have a review over the task that is completed at that period.
+
+6.What are the artifacts of Scrum process?
+  (i)Product Backlog
+  (ii)Sprint Backlog
+  (iii)Product increment
+
+7.What do you understand by sprint backlog?
+  The sprint backlog is a list of tasks identified by the Scrum team to be completed during the Scrum sprint.
+
+8.What is the role of the Product Owner?
+  The product owner is the one who gets who gets all the requirements from the users and asks the scrum team to build it accordingly and also he is the lead user of the developed product.
+
+9. What are the different roles in Scrum?
+  (i)Scrum Manager
+  (ii)Team Memebers
+  (iii)Product Owner
+
+10.What are the responsibilities of a Scrum Master?
+   The Scrum Manager is the one who allocates the various tasks to the team members and he is the one who conducts the scrum meeting were he collects reviews on completion of the task assigned over that period.
+
+11.What are different ceremonies and their importance in Scrum?
+   (i)Standup/scrum call
+   (ii)Sprint/PI planning
+   (iii)Sprint/PI demo
+   (iv)Sprint/PI Retrospective
+
+12.What is the difference between Sprint Planning Meeting and Sprint Retrospective Meeting?
+   Sprint Planning Meeting is done on first day of the sprint and it is where the requirements are collected from the client.
+   Sprint Retrospective Meeting is done on the last day of the sprint where things like what went correct , what went wrong, areas of improvement and the appreciations are discussed. 
+
+
+13.What is the difference between agile & scrum?
+   Agile: It is a set of principles or a philosophy used to develop a working software.
+   Scrum:It is a methodology to implement agile principles.
+
+
+14.Explain Agile in 30 seconds.
+   Agile is set of principles which is use to develop a working software based on regular user feedbacks and frequent meeting with the client.It's highest priority is deleivering the working product at the earliest.The developed product will have high business values.
+
+15.What is the Daily Stand-Up?
+   The  daily scrum meeting  which happens  on each day of a sprint is called as Daily stand up. It happens for 15 mintues.
