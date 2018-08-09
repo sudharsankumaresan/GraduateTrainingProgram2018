@@ -1,0 +1,43 @@
+--<09-AUG-2018>
+--<sudharsan.kumaresan@accenture.com>
+
+1.What is an Environment.
+Environment is a collection of softwares and hardwares.It also consists ofcollection of servers where the code is deployed.
+
+2.Name different Environment used in Cigna.
+(i)Development
+(ii)System
+(iii)Integration
+(iv)Acceptance
+(v)Production
+
+3.Does different Environment differ. (yes/no with explanation)
+No,Because similar works can be carried out parallely.
+
+4.Kind’s of test based environment we use in Cigna.
+(i)Unit Testing
+(ii)Acceptance Testing
+(iii)System Testing
+(iv)Integration Testing
+(v)UAT/PVS
+
+5.What is CI.
+Continous Integration is the process of regular updation in the shared respository.
+
+6.What is CD.
+Continous Delivery is the process of that the software can be reliably released at any time.
+
+7.How CI/CD fits in Agile.
+CI/CD facilates agility because s/w change reaches the production more frequently ,providing more oppourtunities for customers to experience and feedback change.
+Agile deals with delivering a releasable software and CI/CD helps in acheiving that.
+
+8.What do we mean by building and packaging.
+The term build is a process of converting source files to executable files which is either ready for testing or release.
+
+9.What is an artifact.
+The war or jar files that can be deployed to different environment.
+
+10.Name some build tools.
+(i)Maven
+(ii)Ant
+(iii)Gradle
