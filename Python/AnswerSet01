@@ -1,0 +1,92 @@
+
+1.get first name and last name from user and print your full name ?
+
+str=raw_input("enter the firstname")
+enter the firstname sudharsan
+str1=raw_input("enter the lastname")
+enter the lastname kumaresan
+str2=str+str1
+print("the fullname is %s"%str2)
+the fullname is  sudharsan kumaresan
+
+
+2.get your full name, age as input from user and print first name and last name , age using string slicing?
+ i) 2 raw_input get name  and age 
+ ii) print first name and last name and age 
+
+age=input("enter the age")
+enter the age 21
+str=raw_input("enter the fullname")
+enter the fullname sudharsankuamresan
+firstname=str[0:10]
+print(firstname)
+sudharsan
+lastname=str[10:19]
+print(lastname)
+kuamresan
+print("the firstname is %s"%firstname)
+the firstname is  sudharsan
+print("the lastname is %s"%lastname)
+the lastname is kuamresan
+print("the age is %s"%age)
+the age is 21
+
+3.Calculating your birth number in numerology?
+
+var="05/02/1997"
+sum=int(var[0])+int(var[1])+int(var[3])+int(var[4])+int(var[6])+int(var[7])+int(var[8])+int(var[9])
+print sum
+
+33
+
+
+4.Write a Python program to perform sum of three given integers. 
+  However, if any of the two values are equal then sum will be zero ?
+
+num1=input("enter the value")
+num2=input("enter the value")
+num3=input("enter the value")
+if(num1==num2 or num2==num3 or num3==num1):print(0)
+else:sum=(num1+num2+num3)
+print(sum)
+
+enter the value 30
+enter the value 20
+enter the value 10
+60
+
+5.Declare a string variable - try all string functions ?
+i.print(str.lower())
+sudharsan
+ii.print(str.upper())
+SUDHARSAN
+iii.print(len(str))
+9
+iii.print(str.replace("a","b"))
+sudhbrsbn
+str="sudh,vk"
+iv.print(str.split(","))
+['sudh', 'vk']
+v.print(str[2])
+d
+vi.print(str[2:5])
+dh,
+str=" sudh "
+vii.print(str.strip())
+sudh
+viii.print(str.title())
+ Sudh
+ix. print(str.isspace())
+False
+x.print(str.istitle())
+False
+xi.print(str.find("sud"))
+1
+xii.print(str.isalpha())
+False
+xiii.print(str.isupper())
+False
+type(str)
+<type 'str'>
+
+
