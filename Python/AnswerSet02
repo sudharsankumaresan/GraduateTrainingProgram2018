@@ -1,0 +1,101 @@
+1.str=raw_input("enter the firstname")
+str1=raw_input("enter the lastname")
+str2=str+str1
+print("the fullname is %s"%str2)
+enter the firstname sudharsan
+enter the lastname kumaresan
+the fullname is  sudharsan kumaresan
+
+
+2.age=input("enter the age")
+str=raw_input("enter the fullname")
+firstname=str[0:10]
+print(firstname)
+lastname=str[10:19]
+print(lastname)
+print("the firstname is %s"%firstname)
+print("the lastname is %s"%lastname)
+print("the age is %s"%age)
+if age>=18:
+    print("can vote")
+else:
+    print("cannot vote")
+
+enter the age 15
+enter the fullname sudharsankumaresan
+ sudharsan
+kumaresan
+the firstname is  sudharsan
+the lastname is kumaresan
+the age is 15
+cannot vote
+
+3.var="05/02/1997"
+sum=int(var[0])+int(var[1])+int(var[3])+int(var[4])+int(var[6])+int(var[7])+int(var[8])+int(var[9])
+print sum
+
+33
+
+
+4.num1=input("enter the value")
+num2=input("enter the value")
+num3=input("enter the value")
+if(num1==num2 or num2==num3 or num3==num1):print(0)
+else:sum=(num1+num2+num3)
+print(sum)
+
+enter the value 30
+enter the value 20
+enter the value 10
+60
+
+
+5.year=input("enter the year")
+if year%4==0:
+    print("it is a leap year")
+else:    
+    print("not a leap year")
+        
+enter the year1886
+not a leap year
+
+
+6.st=raw_input("enter the string")
+count1=0;
+count2=0
+for i in st:
+    if(i.isupper()):
+        count1=count1+1
+    elif(i.islower()):
+        count2=count2+1
+print("count of uppercases%s"%count1)
+print("count of lowercases%s"%count2)
+
+enter the string Sudharsan
+count of uppercases1
+count of lowercases8
+
+8.s=[1,2,3,4,5]
+sum=0
+for i in s:
+    if i%2==0:
+        sum=sum+i
+print(sum)
+
+the even numbers are 2
+the even numbers are 4
+the sum of even numbers is 6
+
+9.a=input("enter number")
+l=list(a)
+m=tuple(a)
+print(l)
+print(m)
+
+enter number 1,2
+[1, 2]
+(1, 2)
+
+        
+
+
