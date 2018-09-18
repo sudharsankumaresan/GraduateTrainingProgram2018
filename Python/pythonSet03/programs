@@ -1,0 +1,269 @@
+1.class Shape:
+    def area(self):
+	return 0
+class Square(Shape):
+    def __init__(self):
+	    abc=Shape.area(self)
+	    print(abc)
+    def area(self,l):
+        ar=l*l
+        print(ar)
+obj=Square()
+obj.area(4)
+	
+2.s=raw_input("enter the name")
+sr=s.split()
+l=len(sr)
+if len>0 and len<1000:
+    for i in range(len(sr)):
+        sr[i]=sr[i].capitalize()
+    st=" ".join(sr)
+    print(st)
+else:
+    print("not applicable")
+
+3.a =raw_input("enter the string")
+#symbol = 'abcdefghijklmnopqrstuvwxyz'
+if(len(a)>3 and len(a)<100):
+    for in symbol:
+        if(a.count(key)>1):
+            c=a.count(key)
+            c=a.sorted()
+            print key, c
+
+4.import re
+import os
+os.chdir('Desktop')
+with open("file.txt","r") as ob:
+    s=ob.read()
+    d=re.findall("([A-Za-z]+)\s.*\s(\$[0-9]+)",s)
+print d
+
+
+5.inventory={}
+inventory = {'gold' : 500,'pouch' : ['flint', 'twine', 'gemstone'],'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+}
+inventory['pocket']=['seashell', 'strange berry', 'lint']
+print (inventory)
+inventory['backpack'].sort()
+del inventory['backpack'][2]
+print(inventory)
+inventory['gold']+=50
+print(inventory)
+
+6.items={1,2,3,4}
+def sqr(x):return x**2
+l=list(map(sqr,items))
+print l
+
+def square(x):
+    return(x**2)
+def cube(x):
+    return(x**3)
+f=[square,cube]
+for i in range(5):
+    s=map(lamda x:x(i),f)
+    print s
+
+7.def square(x):
+    return(x**2)
+def cube(x):
+    return(x**3)
+f=[square,cube]
+for i in range(5):
+    s=map(lamda x:x(i),f)
+    print s
+
+8.class Person:
+    def get_gender(self):
+	    return 0
+class Male(Person):
+    def get_gender(self):
+	    print("male")
+class Female(Person):
+    def get_gender(self):
+	    print("female")
+ob=Male().get_gender()
+ob1=Female().get_gender()
+    
+9.def check_freq(str):
+    freq = {}
+    for c in str:
+       freq[c] = str.count(c)
+    c=freq.sorted()
+    print(freq)
+
+st=raw_input("enter the string")
+check_freq(st)
+
+10.import os
+#os.chdir("s")
+for root, dirs, files in os.walk("s", topdown=False):
+   for name in files:
+      print(os.path.join(root, name))
+   for name in dirs:
+      print(os.path.join(root, name))
+os.chdir('s/su')
+out=os.listdir(os.getcwd())
+l=len(out)
+print l
+
+11.class Shapes:
+    def rect(self, l, b):
+        try:
+            a = l * b
+            print(a)
+        except Exception as error:
+            print(error)
+
+    def circle(self, r):
+        try:
+            d = 3.14 * r * r
+            print(d)
+        except Exception as error:
+            print(error)
+
+
+obj = Shapes().rect(20, 30)
+obj = Shapes().circle(4)
+
+
+12.student={}
+def add_fn():
+#stud_count=raw_input("enter the no of students")
+#n=2
+#student=dict(raw_input().split() for _ in range(n))
+    if int(stud_count)>=2 and int(stud_count)<=10:
+        for i in range(int(stud_count)):
+            stud_name=raw_input("enter the name")
+            stud_subcount=raw_input("enter the no of subjects")
+            m_list=[]
+            for j in range(int(stud_subcount)):
+        #j=j+1
+                marks=int(input("enter the marks for the subject"+str(j)+":"))
+	        #marks=input()
+                m_list.append(marks)
+                student[stud_name]=m_list
+    print student
+count=raw_input("enter count")
+add_fn()
+
+    name=raw_input("enter the name")
+    if name in student:
+        sum1=sum(student[stud_name])
+        av1=sum1/3
+        print(name)
+        print(round(av1,2))
+#def add_fn():
+    #student={'student1':[100,80,40],'student2':[40,50,60]}
+    #print(student)
+    #sum1=student['student1'][0]+student['student1'][1]+student['student1'][2]
+    #avg1=sum1/3
+    #sum2=student['student2'][0]+student['student2'][1]+student['student2'][2]
+    #avg2=sum2/3
+    #student1=raw_input("enter the marks")
+    #sum1=sum(student['student1'])
+    #sum2=sum(student['student2'])
+    #av1=sum1/3
+    #av2=sum2/3
+    #return sum1,sum2,av1,av2
+#s=add_fn()
+#print(s)
+	
+
+13.import sqlite3
+class stut:
+    def get_connection(self):
+        self.conn=sqlite3.connect('student.db')
+        self.c=self.conn.cursor()
+        self.conn.commit()
+    def create(self):
+        self.c.execute('''create table St1 (Name text,Rollno real,Subject1 real,Subject2 real,Subject3 real)''')
+        self.conn.commit()
+    def insert(self):
+        self.c.execute("insert into St1 values('sudharsan',35,50,60,70)")
+        self.c.execute("insert into St1 values('virat',34,55,65,75)")
+        self.c.execute("insert into St1 values('rohit',33,53,63,73)")
+        self.c.execute("insert into St1 values('dhoni',32,52,62,72)")
+        self.c.execute("insert into St1 values('jadeja',31,51,61,71)")
+        self.conn.commit()
+    def count(self):
+        self.c.execute("select count(Name) from St1")
+        print self.c.fetchone()
+        self.conn.commit()
+    def update(self):
+        self.c.execute("update St1 set Name='dhawan' where Name='sudharsan' ")
+        self.conn.commit()
+    def delete(self):
+        self.c.execute("delete from St1 where Name='dhawan' ")
+        self.conn.commit()
+    def close(self):
+        self.conn.close()
+    #def drop(self):
+        #c.execute("drop table St")
+
+obj=stut()
+obj.get_connection()
+obj.create()
+obj.insert()
+obj.update()
+obj.delete()
+obj.close()
+#drop()
+
+14.def add_fn(a,b):
+    try: 
+        c=a+b
+        print(c)
+    except Exception as error:
+   #except:
+        print(error)
+    finally:
+	    print("entered finally")
+if__name__=="__main__":
+    c=add_fn(5,10)
+    print(c)
+
+15.import re
+n=input("enter the numbers")
+
+if (n>0) and (n<11):
+    for i in range(n):
+        c=raw_input("enter the card number")
+        if len(c)>0 and len(c)<=30:
+            s=re.match("([4-6][0-9]{15})|([4-6][0-9]{3}(-[0-9]{4}){3})",c)
+            print(s)
+            if(s==None):
+			   print("Invalid")
+            else:
+               print("Valid")			
+        else:
+            print("Enter valid credit card number")
+			
+else:
+    print("invalid")
+
+16.def divide(a,b):
+	try:
+		c=a/b
+		print c
+	except Exception as e:
+		print(e)
+		
+inp=input("enter the no of attempts")
+for i in range(inp):
+		a=raw_input()
+		b=raw_input()
+		divide(int(a),int(b))
+
+17.from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+#def get(self):
+        
+   return 'Hello World'
+
+if __name__ == '__main__':
+   app.run()
